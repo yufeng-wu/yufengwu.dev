@@ -23,67 +23,74 @@
 <main>
 <p class="brand">calmera.</p>
 <h1>Privacy Policy</h1>
-<p class="effective">Effective November 8, 2026</p>
-<p>calmera is a meal-logging app made by Yufeng Wu (“calmera”, “we”, “us”). This policy explains what we collect, why, who receives it, and the choices you have. It covers the calmera app and the servers it uses.</p>
+<p class="effective">Effective November 23, 2026</p>
+<p>calmera is a meal-logging app made by Yufeng Wu (“calmera”, “we”, “us”). This policy explains what calmera keeps, where it keeps it, who receives information, and the choices you have.</p>
+<p>This policy covers the iPhone version that stores the journal on your device. If you used an earlier version with a Calmera account, contact calmeradev@gmail.com about that account or its records. Erasing this iPhone does not erase records held by an earlier service.</p>
 <section id="summary">
 <h2>The short version</h2>
-<ul><li>We collect what calmera needs to work: your email, the meals you log and your daily goals.</li><li>To estimate nutrition, calmera sends what you type, photos you choose and the text of what you say to OpenAI, through your own ChatGPT account. Your voice recording stays on your iPhone.</li><li>We don’t sell your information, use it for advertising, or track you across other companies’ apps and websites.</li><li>You can export or delete everything from Settings at any time.</li></ul>
+<ul><li>calmera keeps your meals, goals and settings on your iPhone. There’s no calmera account, and we don’t run servers that receive them.</li><li>To estimate nutrition, calmera sends what you type, photos you choose and the text of what you say to the AI provider you choose: OpenAI (through your ChatGPT account or your own OpenAI API key) or Anthropic (through your own Anthropic API key). Your voice recording stays on your iPhone.</li><li>Online search is on by default. Your AI provider may use details from your request, such as a restaurant or brand name, in a web search. You can turn it off in Settings → AI connection.</li><li>We don’t sell your information, use it for advertising, or track you across other companies’ apps and websites.</li><li>You can export your meals and current goals or erase Calmera’s local data in Settings.</li></ul>
 </section>
 <section id="collect">
-<h2>Information we collect</h2>
-<dl><dt>Account</dt><dd>Your email address, a username based on it, and the date you joined. Sign-in is handled by Clerk; we never see your password.</dd><dt>Meals</dt><dd>For each meal you save: the food name, amount, calories, protein, carbohydrates, fat, meal type, and the date and time.</dd><dt>Goals</dt><dd>Your daily calorie, protein, carbohydrate and fat goals, and the date each one starts.</dd><dt>Preferences</dt><dd>Settings you save to your account.</dd><dt>Consent</dt><dd>The version of this policy you agreed to, and when.</dd><dt>Technical</dt><dd>When the app connects, our servers and providers receive your IP address and basic device and request details. We use them to keep calmera secure and to limit abuse.</dd></dl>
+<h2>What calmera keeps on your iPhone</h2>
+<dl><dt>Meals</dt><dd>For each meal you save: the food name, amount, calories, protein, carbohydrates, fat, meal type, and the date and time.</dd><dt>Goals</dt><dd>Your daily calorie, protein, carbohydrate and fat goals, and the date each one starts.</dd><dt>Start date</dt><dd>The day you started using calmera.</dd><dt>Preferences</dt><dd>Settings such as theme, voice language and food icons.</dd><dt>Consent</dt><dd>The version of this policy you agreed to, and when.</dd><dt>AI connection</dt><dd>Your ChatGPT sign-in or API key, kept in the iPhone’s secure Keychain.</dd><dt>AI usage</dt><dd>For each AI request in the last 7 days: when it was made, the provider and model, and how many tokens and web searches it used, so you can see what your AI use costs. Never what you logged.</dd></dl>
+<p>Calmera excludes the journal from iCloud Backup. To keep a separate copy of your meals and current goals, use Settings → Export your data. You choose where the export goes. Your AI credentials are stored in the Keychain for this iPhone.</p>
 </section>
 <section id="device">
-<h2>Information that stays on your iPhone</h2>
-<ul><li>Voice recordings. Speech is turned into text on your iPhone; the recording isn’t saved or sent anywhere.</li><li>Your goal survey answers, such as age, sex, height, weight and activity. Only the goals you save are sent to us.</li><li>Photos, unless you choose to analyze them. Photos you analyze go to OpenAI as described below; we don’t store them.</li><li>Your ChatGPT sign-in, kept in the iPhone’s secure Keychain.</li><li>App settings such as theme, voice language and meal times, and a copy of recent data so the app opens quickly.</li></ul>
+<h2>Information calmera doesn’t keep</h2>
+<ul><li>Voice recordings. Speech is turned into text on your iPhone; the recording isn’t saved or sent anywhere.</li><li>Your goal survey answers, such as age, sex, height, weight and activity. Only the goals you choose to save are kept.</li><li>Photos. Photos you choose to analyze go to your AI provider as described below; calmera doesn’t store them.</li></ul>
 </section>
 <section id="ai">
-<h2>AI estimates by OpenAI</h2>
-<p>calmera uses OpenAI’s models to estimate the nutrition in your meals. You connect your own ChatGPT account, and requests go from your iPhone directly to OpenAI under that account. They don’t pass through our servers.</p>
+<h2>AI estimates by OpenAI or Anthropic</h2>
+<p>calmera uses AI models to estimate the nutrition in your meals. Meals you type or say and meal photos are sent to the AI provider you choose: OpenAI (through your ChatGPT account or your own OpenAI API key) or Anthropic (through your own Anthropic API key). Requests go from your iPhone directly to that provider under your account. calmera has no servers of its own, so nothing passes through us.</p>
 <p>What is sent:</p>
 <ul><li>The text you type about a meal.</li><li>Photos you choose to analyze.</li><li>The text of what you say when you log by voice.</li><li>Food names and amounts you ask calmera to estimate, and instructions written by calmera.</li></ul>
-<p>Your email, saved meal history, goals and survey answers are not sent. calmera asks OpenAI not to store these requests for later use. OpenAI handles them under its own privacy policy and the terms of your ChatGPT account, which calmera doesn’t control.</p>
+<p>Online search is on by default. Your AI provider may use details from your request, such as a restaurant or brand name, in a web search. You can turn it off in Settings → AI connection.</p>
+<p>The app sends the meal or food you ask about. Your full journal, goals and survey answers stay on the phone. Your provider authenticates each request under your account. When you sign in with ChatGPT, OpenAI also receives an identifier for this app installation. The app keeps the sign-in details it needs on this iPhone, including the email address OpenAI supplies to identify the connected account.</p>
+<p>Calmera sets OpenAI’s response storage option to off. Providers may still retain inputs, outputs or request metadata. For OpenAI API keys, abuse-monitoring logs can contain content and are generally kept for up to 30 days. Anthropic normally deletes API inputs and outputs within 30 days. Account agreements, legal requirements and safety investigations can change those periods. For ChatGPT sign-in, your OpenAI account terms and applicable data controls govern processing.</p>
+<p><a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI API data controls</a></p>
+<p><a href="https://help.openai.com/en/articles/20001542-using-your-chatgpt-plan-in-other-apps-and-sites">ChatGPT plan usage and privacy</a></p>
+<p><a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">Anthropic API retention</a></p>
 <p><a href="https://openai.com/policies/privacy-policy/">OpenAI Privacy Policy</a></p>
-<p>You can disconnect ChatGPT in Settings at any time. AI estimates then stop, and calmera forgets your ChatGPT sign-in on that iPhone.</p>
+<p><a href="https://www.anthropic.com/legal/privacy">Anthropic Privacy Policy</a></p>
+<p>You can disconnect your AI provider in Settings at any time. AI estimates then stop, and calmera forgets your ChatGPT sign-in or API key on that iPhone.</p>
 </section>
 <section id="use">
-<h2>How we use information</h2>
-<ul><li>To run calmera: save and show your meals, goals and progress on any iPhone you sign in on.</li><li>To estimate nutrition when you ask.</li><li>To keep calmera secure, prevent abuse and fix problems.</li><li>To send account messages, such as sign-in codes, and to answer your requests.</li><li>To meet legal obligations.</li></ul>
+<h2>How calmera uses information</h2>
+<ul><li>To show your meals, goals and progress on your iPhone.</li><li>To estimate nutrition when you ask.</li><li>To answer you when you contact us.</li></ul>
 <p>We don’t use your information for advertising, we don’t sell it, and we don’t use it to train AI models.</p>
 </section>
 <section id="share">
 <h2>Who receives information</h2>
-<p>Service providers that run calmera for us, whose terms limit how they may use it:</p>
-<dl><dt>Clerk</dt><dd>Sign-in, account security and sign-in emails.</dd><dt>Neon</dt><dd>Database hosting for your account, meals and goals.</dd><dt>Render</dt><dd>Hosting for calmera’s servers.</dd><dt>Upstash</dt><dd>Rate limiting, which briefly keeps IP addresses.</dd></dl>
-<p>OpenAI, at your direction, as described above.</p>
-<p>We may also disclose information if the law requires it, to protect the rights, safety and security of our users, us or others, or as part of a merger, acquisition or sale of assets, in which case this policy keeps applying to it.</p>
+<p>Calmera has no journal server. The publisher cannot access your saved journal.</p>
+<p>The AI provider you choose receives what you send for estimates, at your direction, as described above.</p>
+<p>If you write to us, we may disclose what you send if the law requires it, to protect the rights, safety and security of our users, us or others, or as part of a merger, acquisition or sale of assets, in which case this policy keeps applying to it.</p>
 </section>
 <section id="retention">
-<h2>How long we keep information</h2>
-<ul><li>Your account, meals and goals stay until you delete them or your account.</li><li>When you delete your account in the app, we delete your meals, goals and profile from our database right away and close your sign-in account. Copies in our providers’ backups and logs are removed on their regular schedules.</li></ul>
+<h2>How long information stays</h2>
+<ul><li>Your meals, goals and settings stay on your iPhone until you change or erase them, or delete calmera.</li><li>The AI usage record keeps only the last 7 days.</li><li>Exported copies remain wherever you saved or shared them until you delete them there.</li><li>OpenAI and Anthropic keep what they receive as their privacy policies and your account settings describe.</li></ul>
 </section>
 <section id="rights">
 <h2>Your choices and rights</h2>
-<dl><dt>Export</dt><dd>Settings → Export your data.</dd><dt>Correct</dt><dd>Edit or delete any meal or goal in the app.</dd><dt>Delete</dt><dd>Settings → your email → Delete account.</dd><dt>Withdraw consent</dt><dd>Disconnect ChatGPT to stop AI estimates, or delete your account. calmera needs your agreement to this policy to work.</dd></dl>
-<p>Depending on your state, you may also have the right to access, correct or delete your information, get a copy of it, and appeal our decision on a request. Contact us to make a request. We’ll confirm it comes from you, answer within the time the law allows, and never treat you differently for using these rights.</p>
+<dl><dt>Export</dt><dd>Settings → Export your data.</dd><dt>Correct</dt><dd>Edit or delete any meal or goal in the app.</dd><dt>Erase</dt><dd>Settings → Erase all data removes the journal, preferences, consent and saved AI credentials from this iPhone. Erasing the app’s data does not delete requests already received by a provider. For those requests, use the provider’s privacy controls or contact the provider.</dd><dt>Withdraw consent</dt><dd>Disconnect your AI provider to stop AI estimates, or erase all data. calmera needs your agreement to this policy to work.</dd></dl>
+<p>Because your information stays on your iPhone, you can review the journal yourself, export meals and current goals, and erase the local data. Depending on your state, you may have other rights too. Contact us with any request; we’ll answer within the time the law allows and never treat you differently for using these rights.</p>
 <p>We don’t sell or share personal information as California law defines those terms.</p>
 </section>
 <section id="health-data">
 <h2>Consumer health data</h2>
-<p>Meals and nutrition goals may be consumer health data under laws such as Washington’s My Health My Data Act. We collect and share them only as this policy describes, with your consent, and we never sell them.</p>
+<p>Meals and nutrition goals may be consumer health data under laws such as Washington’s My Health My Data Act. calmera keeps them on your iPhone, shares them only as this policy describes, with your consent, and never sells them.</p>
 <p><a href="health-data/">Consumer Health Data Privacy Policy</a></p>
 </section>
 <section id="security">
 <h2>Security</h2>
-<p>Information travels to and from calmera encrypted with HTTPS, your ChatGPT sign-in stays in the iPhone Keychain, and access to our systems is limited. No method is perfectly secure, so we can’t guarantee absolute security.</p>
+<p>Your information stays on your iPhone, protected by iOS, and your ChatGPT sign-in or API key stays in the iPhone Keychain. Requests to OpenAI and Anthropic are encrypted with HTTPS. No method is perfectly secure, so we can’t guarantee absolute security.</p>
 </section>
 <section id="children">
 <h2>Children</h2>
-<p>calmera isn’t meant for children under 13, and we don’t knowingly collect their information. If you believe a child has given us information, contact us and we’ll delete it.</p>
+<p>calmera isn’t meant for children under 13. If you believe a child has sent us information, contact us and we’ll delete it.</p>
 </section>
 <section id="where">
 <h2>Where calmera is offered</h2>
-<p>calmera is free and offered only in the United States. We’re based in the United States, and our providers may process information in the United States and other countries.</p>
+<p>calmera is free and offered only in the United States. We’re based in the United States, and OpenAI and Anthropic may process what you send them in the United States and other countries.</p>
 </section>
 <section id="changes">
 <h2>Changes to this policy</h2>
