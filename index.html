@@ -3,38 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Calmera, a meal journal for iPhone, and an academic website.">
+<meta name="description" content="Calmera, a meal journal for iPhone.">
 <meta name="color-scheme" content="light dark">
-<title>Home</title>
+<title>Calmera</title>
+<link rel="icon" href="calmera/images/app-icon.png">
+<link rel="apple-touch-icon" href="calmera/images/app-icon.png">
 <style>
-:root{color-scheme:light dark;--bg:#FFFBF9;--bg-end:#FFF1E1;--ink:#4A3428;--soft:#8A776B;--accent:#BC5A19;--line:#EBDDD0}
-@media(prefers-color-scheme:dark){:root{--bg:#1C1714;--bg-end:#231C18;--ink:#F5EEE9;--soft:#B9AAA0;--accent:#F2A066;--line:#3A302A}}
+:root{color-scheme:light dark;--bg:#FFFBF9;--bg-end:#FFF1E1;--ink:#4A3428;--soft:#8A776B;--accent:#BC5A19;--on-accent:#FFFFFF}
+@media(prefers-color-scheme:dark){:root{--bg:#1C1714;--bg-end:#231C18;--ink:#F5EEE9;--soft:#B9AAA0;--accent:#F2A066;--on-accent:#1C1714}}
 *{box-sizing:border-box}
 html{min-height:100%;background:linear-gradient(var(--bg),var(--bg-end)) fixed var(--bg)}
 body{margin:0;color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
-main{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:56px;padding:48px 16px;text-align:center}
-a{color:inherit;text-decoration:none;border-radius:12px}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:6px}
-.app{display:grid;justify-items:center;gap:4px;padding:8px}
-.app img{width:128px;height:128px;border-radius:29px;margin-bottom:14px;box-shadow:0 12px 32px rgba(188,90,25,.18),0 2px 6px rgba(74,52,40,.08);transition:transform .2s ease}
-.app:hover img{transform:translateY(-2px)}
-.name{font-size:26px;font-weight:650;letter-spacing:-.02em}
-.sub{font-size:15px;color:var(--soft)}
-.app:hover .name{color:var(--accent)}
-.academic{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border:1px solid var(--line);border-radius:999px;font-size:15px;color:var(--soft)}
-.academic:hover{color:var(--accent);border-color:currentColor}
-@media(min-width:640px){.app img{width:152px;height:152px;border-radius:34px}.name{font-size:28px}}
-@media(prefers-reduced-motion:reduce){.app img{transition:none}}
+main{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;padding:48px 16px;text-align:center}
+.hero img{display:block;width:128px;height:128px;margin:0 auto 18px;border-radius:29px;box-shadow:0 12px 32px rgba(188,90,25,.18),0 2px 6px rgba(74,52,40,.08)}
+.hero h1{margin:0;font-size:26px;line-height:1.2;font-weight:650;letter-spacing:-.02em}
+.hero p{margin:6px 0 0;font-size:15px;color:var(--soft)}
+.button{display:inline-block;padding:12px 30px;border-radius:999px;background:var(--accent);color:var(--on-accent);font-size:16px;font-weight:600;text-decoration:none;box-shadow:0 6px 16px rgba(188,90,25,.22);transition:transform .2s ease,box-shadow .2s ease}
+.button:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(188,90,25,.28)}
+.button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+@media(min-width:640px){.hero img{width:152px;height:152px;border-radius:34px}.hero h1{font-size:28px}}
+@media(prefers-reduced-motion:reduce){.button{transition:none}.button:hover{transform:none}}
 </style>
 </head>
 <body>
 <main>
-<a class="app" href="calmera/">
+<div class="hero">
 <img src="calmera/images/app-icon.png" width="128" height="128" alt="">
-<span class="name">Calmera</span>
-<span class="sub">Meal journal for iPhone</span>
-</a>
-<a class="academic" href="https://yufeng-wu.github.io/">Academic website<svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<h1>Calmera</h1>
+<p>Meal journal for iPhone</p>
+</div>
+<a class="button" href="calmera/">See More</a>
 </main>
 </body>
 </html>
