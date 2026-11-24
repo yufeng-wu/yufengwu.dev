@@ -1,7 +1,45 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yufeng Wu · Projects</title>
-<style>:root{color-scheme:light dark;--bg:#FFFBF9;--ink:#2B211C;--soft:#6F625A;--accent:#BC5A19}@media(prefers-color-scheme:dark){:root{--bg:#1C1714;--ink:#F5EEE9;--soft:#B9AAA0;--accent:#F2A066}}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}main{max-width:680px;margin:auto;padding:64px 20px}h1{font-size:36px;letter-spacing:-.03em;line-height:1.2}h2{font-size:22px;margin-top:40px}p{color:var(--soft)}a{color:var(--accent);text-underline-offset:3px}nav{display:flex;gap:20px;flex-wrap:wrap}a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}</style>
-</head><body><main><h1>Yufeng Wu</h1><p>Projects and app support.</p><h2>calmera.</h2><p>A gentle meal-logging app.</p><nav aria-label="Calmera information"><a href="calmera/">Support</a><a href="calmera/privacy/">Privacy Policy</a><a href="calmera/privacy/health-data/">Health Data Policy</a></nav><p><a href="https://yufeng-wu.github.io/">Visit my personal website →</a></p></main></body></html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Calmera, a free meal journal for iPhone, and an academic website.">
+<meta name="color-scheme" content="light dark">
+<title>Home</title>
+<style>
+:root{color-scheme:light dark;--bg:#FFFBF9;--bg-end:#FFF1E1;--ink:#4A3428;--soft:#8A776B;--accent:#BC5A19;--card:#FFFFFF;--line:#F0E4D8;--tile:#FBEBDD}
+@media(prefers-color-scheme:dark){:root{--bg:#1C1714;--bg-end:#231C18;--ink:#F5EEE9;--soft:#B9AAA0;--accent:#F2A066;--card:#26201C;--line:#3A302A;--tile:#33291F}}
+*{box-sizing:border-box}
+html{min-height:100%;background:linear-gradient(var(--bg),var(--bg-end)) fixed var(--bg)}
+body{margin:0;color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+main{min-height:100vh;min-height:100svh;display:grid;place-items:center;padding:48px 16px}
+ul{list-style:none;margin:0;padding:0;width:100%;max-width:400px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 10px 30px rgba(120,72,32,.07)}
+li+li{border-top:1px solid var(--line)}
+a{display:flex;align-items:center;gap:16px;padding:16px 18px;color:inherit;text-decoration:none}
+a:hover .name,a:focus-visible .name{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:-4px;border-radius:20px}
+.icon{flex:none;width:56px;height:56px;border-radius:13px}
+.tile{display:grid;place-items:center;background:var(--tile);color:var(--accent)}
+.text{flex:1;min-width:0;display:grid}
+.name{font-size:17px;font-weight:600;letter-spacing:-.01em}
+.sub{font-size:14px;color:var(--soft)}
+.go{flex:none;color:var(--soft)}
+</style>
+</head>
+<body>
+<main>
+<ul>
+<li><a href="calmera/">
+<img class="icon" src="calmera/images/app-icon.png" width="56" height="56" alt="">
+<span class="text"><span class="name">Calmera</span><span class="sub">Free meal journal for iPhone</span></span>
+<svg class="go" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a></li>
+<li><a href="https://yufeng-wu.github.io/">
+<span class="icon tile" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28"><path d="M3 10.5L14 5l11 5.5-11 5.5z M8 13v5.5c0 1.6 2.7 3 6 3s6-1.4 6-3V13 M25 10.5v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<span class="text"><span class="name">Academic website</span></span>
+<svg class="go" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a></li>
+</ul>
+</main>
+</body>
+</html>
