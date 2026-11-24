@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Calmera is a free meal journal for iPhone. Log meals by text, photo or voice and see calories, protein, carbs and fat against your goals. Intro, support and privacy policies.">
+<meta name="description" content="Calmera is a free, open-source meal journal for iPhone. Connect your own AI by signing in with ChatGPT or adding an OpenAI or Anthropic API key. Intro, support and privacy policies.">
 <meta name="color-scheme" content="light dark">
 <title>Intro &amp; Support · Calmera</title>
 <link rel="icon" href="images/app-icon.png">
@@ -16,20 +16,29 @@ body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,
 .wrap{max-width:720px;margin-left:auto;margin-right:auto;padding-left:16px;padding-right:16px}
 .wide{max-width:1080px}
 .col{max-width:688px;margin-left:auto;margin-right:auto}
-header{padding-top:48px;padding-bottom:12px}
-.brand{display:flex;align-items:center;gap:14px;margin:0 0 28px}
-.brand img{width:56px;height:56px;border-radius:13px}
-.brand span{font-size:20px;font-weight:650;letter-spacing:-.01em}
-h1{font-size:36px;line-height:1.15;letter-spacing:-.025em;margin:0 0 16px}
+.hero{padding:56px 16px 36px;text-align:center}
+.hero img{display:block;width:128px;height:128px;margin:0 auto 18px;border-radius:29px;box-shadow:0 12px 32px rgba(188,90,25,.18),0 2px 6px rgba(74,52,40,.08)}
+.hero h1{margin:0;font-size:26px;line-height:1.2;font-weight:650;letter-spacing:-.02em}
+.hero p{margin:6px 0 0;font-size:15px;line-height:1.5;color:var(--soft)}
+@media(min-width:640px){.hero{padding-top:72px;padding-bottom:44px}.hero img{width:152px;height:152px;border-radius:34px}.hero h1{font-size:28px}}
 h2{font-size:22px;line-height:1.3;letter-spacing:-.01em;margin:0 0 12px}
 section{padding-top:20px;padding-bottom:20px}
 p{margin:0 0 14px}
 .soft{color:var(--soft)}
 a{color:var(--accent);text-underline-offset:3px}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-.ways{display:grid;gap:12px;margin:16px 0;padding:0;list-style:none}
+.points{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+@media(min-width:640px){.points{grid-template-columns:1fr 1fr;gap:16px}.points .ai{grid-column:1/-1}}
+.point{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 6px 20px rgba(120,72,32,.05)}
+.head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.point h2{font-size:21px;margin:0}
+.point p{margin:0 0 10px}
+.point p:last-child{margin-bottom:0}
+.icon{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--badge);color:var(--accent)}
+.icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ways{display:grid;gap:10px;margin:14px 0;padding:0;list-style:none}
 @media(min-width:600px){.ways{grid-template-columns:1fr 1fr}}
-.ways li{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px}
+.ways li{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
 .ways strong{display:block;font-size:17px;margin-bottom:2px}
 .ways span{color:var(--soft);font-size:15px}
 .steps{display:flex;flex-wrap:wrap;justify-content:center;gap:28px 16px;margin:20px 0 0;padding:0;list-style:none;counter-reset:step}
@@ -45,26 +54,41 @@ footer{margin-top:12px;padding-top:20px;padding-bottom:48px;border-top:1px solid
 </style>
 </head>
 <body>
-<header class="wrap">
-<p class="brand"><img src="images/app-icon.png" width="56" height="56" alt=""><span>Calmera</span></p>
-<h1>Intro &amp; Support</h1>
-<p>Calmera is a free meal journal for iPhone. Log a meal by text, photo or voice, and see its calories, protein, carbs and fat against your daily goals.</p>
-<p>Everything you log is stored on your iPhone. There’s no Calmera account.</p>
+<header class="hero">
+<img src="images/app-icon.png" width="128" height="128" alt="">
+<h1>Calmera</h1>
+<p>Meal journal for iPhone</p>
 </header>
 
 <main>
-<section class="wrap" aria-labelledby="ai">
-<h2 id="ai">Connect your own AI</h2>
+<section class="wrap" aria-label="Highlights">
+<ul class="points">
+<li class="point">
+<div class="head"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></span><h2>Open source</h2></div>
+<p>Released under the MIT License.</p>
+<p><a href="https://github.com/yufeng-wu/calmera">View the code on GitHub</a></p>
+</li>
+<li class="point">
+<div class="head"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V4a1 1 0 0 1 1-1h9l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></span><h2>100% free</h2></div>
+<p>Free to download. No subscription fee.</p>
+</li>
+<li class="point ai">
+<div class="head"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span><h2>Connect your own AI</h2></div>
 <p>Calmera estimates nutrition with an AI service you connect, in one of two ways:</p>
 <ul class="ways">
 <li><strong>Sign in with ChatGPT</strong><span>Uses an eligible paid ChatGPT plan: Go, Plus or Pro.</span></li>
 <li><strong>Your own API key</strong><span>From OpenAI or Anthropic.</span></li>
 </ul>
-<p class="soft">Requests go from your iPhone directly to the provider you choose. Calmera has no servers of its own.</p>
+<p>AI use counts toward your own ChatGPT plan, or is billed to your own API account.</p>
+</li>
+</ul>
 </section>
 
 <section class="wrap wide" aria-labelledby="how">
-<h2 id="how" class="col">How to use it</h2>
+<div class="col">
+<h2 id="how">How to use it</h2>
+<p>Log a meal by text, photo or voice, and see its calories, protein, carbs and fat against your daily goals.</p>
+</div>
 <ol class="steps">
 <li><img src="images/today.webp" width="600" height="1305" loading="lazy" alt="Calmera’s Today screen showing 873 of 2,000 calories, protein, carbs and fat totals, and two meals: blueberry oatmeal for breakfast and a salmon rice bowl for lunch."><p>Today shows what you’ve eaten and how close you are to your goals.</p></li>
 <li><img src="images/add-meal.webp" width="600" height="1305" loading="lazy" alt="The Today screen with the Add menu open, offering Photo, Text and Voice."><p>Tap Add, then log a meal by photo, text or voice.</p></li>
@@ -82,7 +106,8 @@ footer{margin-top:12px;padding-top:20px;padding-bottom:48px;border-top:1px solid
 
 <section class="wrap" aria-labelledby="privacy">
 <h2 id="privacy">Privacy</h2>
-<p>Your journal stays on your iPhone. To keep a copy, use Settings → Export your data. To remove it, use Settings → Erase all data.</p>
+<p>Your journal stays on your iPhone, and there’s no Calmera account. Calmera has no servers of its own: AI requests go straight from your iPhone to the provider you connect.</p>
+<p>To keep a copy, use Settings → Export your data. To remove it, use Settings → Erase all data.</p>
 <ul class="links">
 <li><a href="privacy/">Privacy Policy</a></li>
 <li><a href="privacy/health-data/">Consumer Health Data Privacy Policy</a></li>
