@@ -28,14 +28,11 @@ section{padding-top:20px;padding-bottom:20px}
 p{margin:0 0 14px}
 a{color:var(--accent);text-underline-offset:3px}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-.features{display:grid;gap:12px;margin:16px 0 0;padding:0;list-style:none}
-@media(min-width:640px){.features{grid-template-columns:1fr 1fr;gap:16px}}
-.feature{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 6px 20px rgba(120,72,32,.05)}
-.head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
-.feature h3{font-size:19px;line-height:1.3;letter-spacing:-.01em;margin:0}
-.feature p{margin:0;font-size:16px;line-height:1.55}
-.icon{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--badge);color:var(--accent)}
-.icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.core{margin:0;padding-left:26px}
+.core li{margin:0 0 10px;padding-left:4px;text-wrap:pretty}
+.core li:last-child{margin-bottom:0}
+.core li::marker{color:var(--accent);font-weight:700}
+.core strong{font-weight:650}
 .steps{display:flex;flex-wrap:wrap;justify-content:center;gap:28px 16px;margin:20px 0 0;padding:0;list-style:none;counter-reset:step}
 .steps li{flex:0 1 calc((100% - 16px)/2);counter-increment:step}
 @media(min-width:640px){.steps li{flex-basis:calc((100% - 32px)/3)}}
@@ -62,24 +59,12 @@ footer{margin-top:12px;padding-top:20px;padding-bottom:48px;border-top:1px solid
 <main>
 <section class="wrap" aria-labelledby="features">
 <h2 id="features">Core features</h2>
-<ul class="features">
-<li class="feature">
-<div class="head"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span><h3>Log by text, voice or photo</h3></div>
-<p>Type what you ate, say it, or add a photo. Calmera estimates the calories, protein, carbs and fat, and you can edit anything before you save.</p>
-</li>
-<li class="feature">
-<div class="head"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span><h3>Runs on your own AI</h3></div>
-<p>Powered entirely by your own AI: your ChatGPT plan or your Claude account. Sign in with ChatGPT directly (Go, Plus or Pro plan), or use your own OpenAI or Claude API key.</p>
-</li>
-<li class="feature">
-<div class="head"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span><h3>Choose your model, turn on online search</h3></div>
-<p>Pick your own model, such as Sonnet, Opus or Haiku. On models that support it, online search looks up restaurants and brand names you mention, for more accurate calorie and macro estimates.</p>
-</li>
-<li class="feature">
-<div class="head"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><h3>No account</h3></div>
-<p>Everything is saved locally on your iPhone, and Calmera has no access to your personal data.</p>
-</li>
-</ul>
+<ol class="core">
+<li><strong>Log by text, voice or photo.</strong></li>
+<li><strong>Runs on your own AI.</strong> Sign in with your ChatGPT plan, or use an OpenAI or Claude API key.</li>
+<li><strong>Pick your model,</strong> such as Sonnet, Opus or Haiku, with optional online search for restaurants and brands.</li>
+<li><strong>No account.</strong> Everything stays on your iPhone.</li>
+</ol>
 </section>
 
 <section class="wrap wide" aria-labelledby="demo">
