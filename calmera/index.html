@@ -3,22 +3,93 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Support and privacy information for calmera, a meal-logging app by Yufeng Wu.">
-<title>Support · calmera</title>
+<meta name="description" content="Calmera is a free meal journal for iPhone. Log meals by text, photo or voice and see calories, protein, carbs and fat against your goals. Intro, support and privacy policies.">
+<meta name="color-scheme" content="light dark">
+<title>Intro &amp; Support · Calmera</title>
+<link rel="icon" href="images/app-icon.png">
+<link rel="apple-touch-icon" href="images/app-icon.png">
 <style>
-:root{color-scheme:light dark;--bg:#FFFBF9;--ink:#2B211C;--soft:#6F625A;--accent:#BC5A19;--rule:#EDE3DA}
-@media(prefers-color-scheme:dark){:root{--bg:#1C1714;--ink:#F5EEE9;--soft:#B9AAA0;--accent:#F2A066;--rule:#3A302A}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}main{max-width:680px;margin:auto;padding:48px 20px 64px}.brand{font-weight:700;color:var(--accent);letter-spacing:-.02em;margin:0 0 24px}h1{font-size:36px;line-height:1.2;margin:0 0 18px;letter-spacing:-.03em}h2{font-size:20px;margin:32px 0 8px}a{color:var(--accent);text-underline-offset:3px}p{margin:0 0 16px}.muted{color:var(--soft)}nav{display:grid;gap:12px;margin-top:16px}footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--rule);font-size:14px;color:var(--soft)}a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+:root{color-scheme:light dark;--bg:#FFFBF9;--ink:#4A3428;--soft:#7D6A5E;--accent:#BC5A19;--card:#FFFFFF;--line:#F0E4D8;--badge:#FBEBDD;--shot-line:rgba(74,52,40,.12)}
+@media(prefers-color-scheme:dark){:root{--bg:#1C1714;--ink:#F5EEE9;--soft:#B9AAA0;--accent:#F2A066;--card:#26201C;--line:#3A302A;--badge:#3A2C22;--shot-line:rgba(245,238,233,.14)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin-left:auto;margin-right:auto;padding-left:16px;padding-right:16px}
+.wide{max-width:1080px}
+.col{max-width:688px;margin-left:auto;margin-right:auto}
+header{padding-top:48px;padding-bottom:12px}
+.brand{display:flex;align-items:center;gap:14px;margin:0 0 28px}
+.brand img{width:56px;height:56px;border-radius:13px}
+.brand span{font-size:20px;font-weight:650;letter-spacing:-.01em}
+h1{font-size:36px;line-height:1.15;letter-spacing:-.025em;margin:0 0 16px}
+h2{font-size:22px;line-height:1.3;letter-spacing:-.01em;margin:0 0 12px}
+section{padding-top:20px;padding-bottom:20px}
+p{margin:0 0 14px}
+.soft{color:var(--soft)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.ways{display:grid;gap:12px;margin:16px 0;padding:0;list-style:none}
+@media(min-width:600px){.ways{grid-template-columns:1fr 1fr}}
+.ways li{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px}
+.ways strong{display:block;font-size:17px;margin-bottom:2px}
+.ways span{color:var(--soft);font-size:15px}
+.steps{display:flex;flex-wrap:wrap;justify-content:center;gap:28px 16px;margin:20px 0 0;padding:0;list-style:none;counter-reset:step}
+.steps li{flex:0 1 calc((100% - 16px)/2);counter-increment:step}
+@media(min-width:640px){.steps li{flex-basis:calc((100% - 32px)/3)}}
+@media(min-width:1000px){.steps{gap:16px}.steps li{flex-basis:calc((100% - 64px)/5)}}
+.steps img{display:block;width:100%;height:auto;aspect-ratio:1206/2622;border-radius:14%/6.44%;border:1px solid var(--shot-line);background:var(--card);box-shadow:0 8px 24px rgba(120,72,32,.08)}
+.steps p{display:flex;gap:10px;margin:14px 2px 0;font-size:15px;line-height:1.45}
+.steps p::before{content:counter(step);flex:none;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--badge);color:var(--accent);font-size:13px;font-weight:700}
+@media(max-width:639px){.steps p{display:block;margin-top:12px}.steps p::before{display:inline-grid;vertical-align:1px;width:22px;height:22px;margin-right:8px;font-size:12px}}
+.links{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+footer{margin-top:12px;padding-top:20px;padding-bottom:48px;border-top:1px solid var(--line);font-size:15px}
 </style>
 </head>
-<body><main>
-<p class="brand">calmera.</p>
-<h1>A little help, whenever you need it.</h1>
-<p class="muted">Support for calmera, a meal-logging app by Yufeng Wu.</p>
-<section aria-labelledby="contact"><h2 id="contact">Contact support</h2>
-<p>For help with your account, meal logging, or a privacy request, email <a href="mailto:calmeradev@gmail.com">calmeradev@gmail.com</a>.</p>
-<p>Tell us what happened and which app version you’re using. Please don’t include passwords, sign-in codes, or ChatGPT credentials.</p></section>
-<section aria-labelledby="privacy"><h2 id="privacy">Your privacy</h2>
-<nav aria-label="Privacy policies"><a href="privacy/">Privacy Policy</a><a href="privacy/health-data/">Consumer Health Data Privacy Policy</a></nav></section>
-<footer>Made by Yufeng Wu · <a href="../">Home</a></footer>
-</main></body></html>
+<body>
+<header class="wrap">
+<p class="brand"><img src="images/app-icon.png" width="56" height="56" alt=""><span>Calmera</span></p>
+<h1>Intro &amp; Support</h1>
+<p>Calmera is a free meal journal for iPhone. Log a meal by text, photo or voice, and see its calories, protein, carbs and fat against your daily goals.</p>
+<p>Everything you log is stored on your iPhone. There’s no Calmera account.</p>
+</header>
+
+<main>
+<section class="wrap" aria-labelledby="ai">
+<h2 id="ai">Connect your own AI</h2>
+<p>Calmera estimates nutrition with an AI service you connect, in one of two ways:</p>
+<ul class="ways">
+<li><strong>Sign in with ChatGPT</strong><span>Uses an eligible paid ChatGPT plan: Go, Plus or Pro.</span></li>
+<li><strong>Your own API key</strong><span>From OpenAI or Anthropic.</span></li>
+</ul>
+<p class="soft">Requests go from your iPhone directly to the provider you choose. Calmera has no servers of its own.</p>
+</section>
+
+<section class="wrap wide" aria-labelledby="how">
+<h2 id="how" class="col">How to use it</h2>
+<ol class="steps">
+<li><img src="images/today.webp" width="600" height="1305" loading="lazy" alt="Calmera’s Today screen showing 873 of 2,000 calories, protein, carbs and fat totals, and two meals: blueberry oatmeal for breakfast and a salmon rice bowl for lunch."><p>Today shows what you’ve eaten and how close you are to your goals.</p></li>
+<li><img src="images/add-meal.webp" width="600" height="1305" loading="lazy" alt="The Today screen with the Add menu open, offering Photo, Text and Voice."><p>Tap Add, then log a meal by photo, text or voice.</p></li>
+<li><img src="images/review.webp" width="600" height="1305" loading="lazy" alt="The Review screen for “Two slices of avocado toast and a poached egg for lunch”: an estimated 412 kcal with 15.3 g protein, 40.4 g carbs and 20.8 g fat, split into avocado toast and a poached egg, with a Save button."><p>Check the estimate, edit anything that’s off, then save.</p></li>
+<li><img src="images/ai-connection.webp" width="600" height="1305" loading="lazy" alt="The AI connection screen with two options: sign in with ChatGPT, which requires a Go, Plus or Pro plan, or add an OpenAI or Anthropic API key."><p>Connect your AI once: sign in with ChatGPT or add an API key.</p></li>
+<li><img src="images/insights.webp" width="600" height="1305" loading="lazy" alt="The Insights screen for the past week: 7 days logged, and average calories, protein, carbs and fat as a share of each goal, with a bar for each day."><p>Insights shows your trends by week, month or year.</p></li>
+</ol>
+</section>
+
+<section class="wrap" aria-labelledby="support">
+<h2 id="support">Support</h2>
+<p>Email <a href="mailto:calmeradev@gmail.com">calmeradev@gmail.com</a>. Tell us what happened and which version of Calmera you’re using.</p>
+<p>Please don’t include your ChatGPT account details or API keys in your email.</p>
+</section>
+
+<section class="wrap" aria-labelledby="privacy">
+<h2 id="privacy">Privacy</h2>
+<p>Your journal stays on your iPhone. To keep a copy, use Settings → Export your data. To remove it, use Settings → Erase all data.</p>
+<ul class="links">
+<li><a href="privacy/">Privacy Policy</a></li>
+<li><a href="privacy/health-data/">Consumer Health Data Privacy Policy</a></li>
+</ul>
+</section>
+</main>
+
+<footer class="wrap"><a href="../">Home</a></footer>
+</body>
+</html>
