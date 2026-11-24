@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Calmera, a meal journal for iPhone.">
+<meta name="description" content="Calmera is an AI calorie and macro tracker for iPhone, powered by your own ChatGPT or Claude. 100% free and open source.">
 <meta name="color-scheme" content="light dark">
 <title>Calmera</title>
 <link rel="icon" href="calmera/images/app-icon.png">
@@ -17,11 +17,13 @@ body{margin:0;color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"S
 main{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;padding:48px 16px;text-align:center}
 .hero img{display:block;width:128px;height:128px;margin:0 auto 18px;border-radius:29px;box-shadow:0 12px 32px rgba(188,90,25,.18),0 2px 6px rgba(74,52,40,.08)}
 .hero h1{margin:0;font-size:26px;line-height:1.2;font-weight:650;letter-spacing:-.02em}
-.hero p{margin:6px 0 0;font-size:15px;color:var(--soft)}
+.hero p{margin:6px 0 0;font-size:16px;line-height:1.5;color:var(--soft)}
+.hero .lead{margin-top:10px;color:var(--ink);font-weight:650}
+.hero .lead span{display:inline-block}
 .button{display:inline-block;padding:12px 30px;border-radius:999px;background:var(--accent);color:var(--on-accent);font-size:16px;font-weight:600;text-decoration:none;box-shadow:0 6px 16px rgba(188,90,25,.22);transition:transform .2s ease,box-shadow .2s ease}
 .button:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(188,90,25,.28)}
 .button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
-@media(min-width:640px){.hero img{width:152px;height:152px;border-radius:34px}.hero h1{font-size:28px}}
+@media(min-width:640px){.hero img{width:152px;height:152px;border-radius:34px}.hero h1{font-size:28px}.hero p{font-size:17px}}
 @media(prefers-reduced-motion:reduce){.button{transition:none}.button:hover{transform:none}}
 </style>
 </head>
@@ -30,7 +32,8 @@ main{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align
 <div class="hero">
 <img src="calmera/images/app-icon.png" width="128" height="128" alt="">
 <h1>Calmera</h1>
-<p>Meal journal for iPhone</p>
+<p>AI calorie and macro tracker</p>
+<p class="lead"><span>Powered by your own ChatGPT or Claude.</span> <span>100% free and open source.</span></p>
 </div>
 <a class="button" href="calmera/">See More</a>
 </main>
