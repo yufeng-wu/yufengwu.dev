@@ -28,6 +28,10 @@ section{padding-top:20px;padding-bottom:20px}
 p{margin:0 0 14px}
 a{color:var(--accent);text-underline-offset:3px}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.updates{display:grid;gap:12px;margin:0;padding:0;list-style:none;font-size:15px;line-height:1.5}
+.updates li{display:grid;gap:2px;text-wrap:pretty}
+.updates time{color:var(--soft);font-size:14px;font-weight:650;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(min-width:520px){.updates{gap:8px}.updates li{grid-template-columns:7.5em 1fr;gap:16px}.updates time{font-size:15px}}
 .core{margin:0;padding-left:26px}
 .core li{margin:0 0 10px;padding-left:4px;text-wrap:pretty}
 .core li:last-child{margin-bottom:0}
@@ -57,6 +61,15 @@ footer{margin-top:12px;padding-top:20px;padding-bottom:48px;border-top:1px solid
 </header>
 
 <main>
+<section class="wrap" aria-labelledby="updates">
+<h2 id="updates">Updates</h2>
+<!-- Newest first. For a new entry, copy an <li> to the top and change its date and text. -->
+<ul class="updates">
+<li><time datetime="2026-11-21">Nov 21, 2026</time><span>Submitted to the App Store and in review with Apple.</span></li>
+<li><time datetime="2026-11-10">Nov 10, 2026</time><span>Finished the first round of beta testing with friends and family, and folded their feedback into the app.</span></li>
+</ul>
+</section>
+
 <section class="wrap" aria-labelledby="features">
 <h2 id="features">Core features</h2>
 <ol class="core">
@@ -67,8 +80,8 @@ footer{margin-top:12px;padding-top:20px;padding-bottom:48px;border-top:1px solid
 </ol>
 </section>
 
-<section class="wrap wide" aria-labelledby="demo">
-<h2 id="demo" class="col">Demo</h2>
+<section class="wrap wide" aria-labelledby="screenshots">
+<h2 id="screenshots" class="col">Screenshots</h2>
 <ol class="steps">
 <li><img src="images/today.webp" width="600" height="1305" loading="lazy" alt="Calmera’s Today screen showing 873 of 2,000 calories, protein, carbs and fat totals, and two meals: blueberry oatmeal for breakfast and a salmon rice bowl for lunch."><p>Today shows what you’ve eaten and how close you are to your goals.</p></li>
 <li><img src="images/add-meal.webp" width="600" height="1305" loading="lazy" alt="The Today screen with the Add menu open, offering Photo, Text and Voice."><p>Tap Add, then log a meal by photo, text or voice.</p></li>
